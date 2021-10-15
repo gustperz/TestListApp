@@ -3,6 +3,7 @@ import {SafeAreaView, StatusBar, StyleSheet, View} from 'react-native';
 import Footer from './components/Footer';
 
 import Header from './components/Header';
+import HolidaysList from './components/HolidaysList';
 
 const App = () => {
   return (
@@ -10,7 +11,11 @@ const App = () => {
       <StatusBar barStyle="dark-content" backgroundColor={backgroundColor} />
 
       <Header />
-      <View style={styles.container}></View>
+
+      <View style={styles.container}>
+        <HolidaysList />
+      </View>
+
       <Footer />
     </SafeAreaView>
   );
