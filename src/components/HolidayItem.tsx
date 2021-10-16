@@ -1,13 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-export interface HolidayItemProps {
-  id: string;
-  date: Date;
-  description: string;
-}
-
-export default function HolidayItem({date, description}: HolidayItemProps) {
+export default function HolidayItem({date, description}: Holiday) {
   return (
     <View style={styles.container}>
       <Text>{date.toDateString()}</Text>
